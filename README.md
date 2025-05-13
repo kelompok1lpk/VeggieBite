@@ -7,7 +7,7 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("{background_url}");
+        background-image: url("{https://i.ibb.co.com/xqwsXfq8/IMG-0774.jpg}");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -137,7 +137,7 @@ def halaman_6():
     # Tombol Search
     if st.button("Search"):
         bahan = st.session_state.bahan_input.lower()
-        Pengganti = {
+        pengganti = {
             "susu": "susu almond / oat milk",
             "telur": "chia egg (chia + air)",
             "daging": "jamur, tempe, atau tofu",
@@ -152,7 +152,7 @@ def halaman_6():
             "mentega": "minyak kelapa, margarin vegan, alpukat",
             "mayones": "mayones vegan, tofu + mustard + lemon",
         }
-         hasil = pengganti.get(bahan, "Bahan yang kamu cari belum ada di daftar. Coba bahan lain yuk!")
+        hasil = pengganti.get(bahan, "Bahan yang kamu cari belum ada di daftar. Coba bahan lain yuk!")
         st.session_state.hasil_pengganti = f"Pengganti untuk {bahan}: {hasil}"
 
     # Tampilkan hasil kalau ada
